@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  background: $background;
+  color: $text-color;
+}
+
+.wrapper, #__next {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-inner {
+  flex: 1 1;
+}
+
+.section {
+  margin: 80px 0;
+
+  @include mq(767px) {
+    margin: 40px 0;
+  }
+
+  &--no-top-margin {
+    margin-top: 0;
+  }
+
+  &--no-bottom-margin {
+    margin-bottom: 0;
+  }
+}
+
+.h1 {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
