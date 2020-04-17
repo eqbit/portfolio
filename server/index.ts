@@ -15,6 +15,7 @@ app.prepare().then(() => {
   app.setAssetPrefix(process.env.STATIC_PATH);
   server.use(express.static(path.join(__dirname, '../static')));
 
+  // eslint-disable-next-line no-console
   console.log(process.env.PROXY_MODE);
 
   if (process.env.PROXY_MODE === 'local') {
@@ -29,6 +30,7 @@ app.prepare().then(() => {
 
   server.listen(port);
 
+  // eslint-disable-next-line no-console
   console.log(
     `> Server listening at ${
       process.env.NODE_ENV === 'production'

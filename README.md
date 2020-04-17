@@ -1,1 +1,1 @@
-## Next.js + Redux + Typescript boilerplate
+## Portfolio static site generator

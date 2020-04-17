@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import TripleDot from '@components/triple-dot';
 
 const FirstScreen: React.FC = () => {
   return (
@@ -21,6 +22,8 @@ const FirstScreen: React.FC = () => {
           </div>
         </div>
       </div>
+      
+      <TripleDot/>
     </section>
   );
 };

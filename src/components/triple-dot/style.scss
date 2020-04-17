@@ -1,0 +1,21 @@
+.triple-dot {
+  margin-top: 80px;
+
+  span {
+    width: 8px;
+    height: 8px;
+    background: #FFF;
+    border-radius: 50%;
+    display: block;
+
+    &:nth-child(1) {
+      transform: scale(.5);
+      margin-bottom: 5px;
+    }
+
+    &:nth-child(2) {
+      transform: scale(.75);
+      margin-bottom: 7px;
+    }
+  }
+}
